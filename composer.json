@@ -1,0 +1,32 @@
+{
+    "name": "bilwy/watermark",
+    "alias": "文本水印",
+    "description": "Generate text watermark with canvas for dcat-admin",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/bilwy/watermark",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bilwy",
+            "email": "bilwy@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bilwy\\Watermark\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Bilwy\\Watermark\\WatermarkServiceProvider",
+        "laravel": {
+            "providers": [
+                "Bilwy\\Watermark\\WatermarkServiceProvider"
+            ]
+        }
+    }
+}
